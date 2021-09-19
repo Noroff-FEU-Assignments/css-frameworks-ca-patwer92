@@ -1,0 +1,32 @@
+// Font families
+$font-family-base: "Lato", sans-serif;
+$headings-font-family: "Playfair Display", serif;
+
+// Font sizes
+$primary-font-size: 20px;
+$secondary-font-size: 18px;
+$base-font-size: 16px;
+$headings-font-size: 34px;
+$icons-font-size: 36px;
+$tabs-font-size: 19px;
+$tabs-icon-size: 28px;
+
+body {
+  font-family: $font-family-base;
+}
+
+h1 {
+  font-family: $headings-font-family;
+  color: $primary;
+  font-size: $headings-font-size;
+}
+
+h2 {
+  color: $dark;
+  font-size: $primary-font-size;
+}
+
+p {
+  font-size: $base-font-size;
+  color: $secondary;
+}

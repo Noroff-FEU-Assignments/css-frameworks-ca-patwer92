@@ -1,0 +1,153 @@
+.contact__section {
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    padding: 0;
+  }
+
+  .col-md {
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+.contact__container {
+  margin-top: 4rem;
+  margin-left: 2rem;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .contact__item {
+    margin-top: 2rem;
+    padding: 0 0 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media (max-width: $breakpoint-md) {
+      margin-top: 0;
+      padding: 3rem 0 0 0rem;
+    }
+
+    i {
+      margin-right: 2rem;
+      font-size: $icons-font-size;
+      color: $secondary;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: $base-font-size;
+    }
+  }
+}
+
+.form__container {
+  padding: 0;
+  margin: 0;
+  h1 {
+    margin-bottom: 2rem;
+
+    @media (max-width: $breakpoint-md) {
+      margin-left: 2rem;
+    }
+  }
+
+  form {
+    padding: 2rem;
+    background: $light;
+    border-radius: 0.4rem;
+
+    .form-group input {
+      height: 3.5rem;
+      border: none;
+    }
+
+    .form-group textarea {
+      height: 15rem;
+      resize: none;
+      border: none;
+    }
+
+    .form-group label {
+      color: $secondary;
+      font-family: $font-family-base;
+      font-size: $primary-font-size;
+      font-weight: 500;
+    }
+
+    .input-group-text {
+      height: 3.5rem;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #c7c7c7;
+      font-size: 17px;
+      color: $white;
+    }
+
+    .form__btn {
+      height: 3.5rem;
+      width: 100%;
+      font-size: 22px;
+      font-weight: 500;
+      background: $secondary;
+      color: $white;
+      transition: 200ms;
+
+      &:hover {
+        background: $primary;
+      }
+    }
+
+    .form__check {
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    input[type="checkbox"] + span {
+      cursor: pointer;
+      font: 16px sans-serif;
+      color: $secondary;
+    }
+
+    input[type="checkbox"] + span:before {
+      content: "";
+      border: none;
+      border-radius: 0.3rem;
+      display: inline-block;
+      min-width: 2.2rem;
+      height: 2rem;
+      margin-right: 0.8rem;
+      vertical-align: -2px;
+      background: $primary;
+    }
+
+    input[type="checkbox"]:checked + span:before {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-checkmark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50px;
+      border-radius: 0.3rem;
+    }
+  }
+}

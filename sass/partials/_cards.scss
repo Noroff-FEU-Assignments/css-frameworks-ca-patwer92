@@ -1,0 +1,76 @@
+.news__container {
+  margin-top: 0rem;
+
+  @media (max-width: $breakpoint-lg) {
+  }
+}
+
+.card__content {
+  .card,
+  .btn__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    background: $white;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+
+    div {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+    }
+
+    .card-text {
+      font-size: $secondary-font-size;
+    }
+  }
+
+  .btn__card,
+  .btn__prepend {
+    height: 3rem;
+  }
+
+  .btn__card {
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 0.3rem;
+    background: $primary;
+    color: $white;
+    font-size: $font-family-base;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .btn__prepend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background: $secondary;
+  }
+}
+
+.pagination {
+  margin: 3rem 0;
+}
+
+.page-link {
+  border-color: $primary;
+  &:hover {
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+  }
+}

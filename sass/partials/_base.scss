@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);
+}
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 12rem;
+  min-height: 70vh;
+
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 6.4rem;
+  }
+
+  .intro__text {
+    margin: 1rem 0 8rem 0;
+  }
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}

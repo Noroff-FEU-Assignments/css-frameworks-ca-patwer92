@@ -9809,10 +9809,6 @@ main .intro__text {
   font-size: 28px;
 }
 
-.news__container {
-  margin-top: 0rem;
-}
-
 .card__content .card,
 .card__content .btn__card {
   display: -webkit-box;
